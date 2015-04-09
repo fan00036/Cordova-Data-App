@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+
+
+
+	<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+	<script src="cordova.js"></script>
+
+	<script src="https://hammerjs.github.io/dist/hammer.js"></script>
+
+	</script>
+
+
+
+</head>
+
+<body>
+
+
+	<div class="wrapper">
+
+
+		<header class="apptitle">
+			<h1>Giftr</h1>
+		</header>
+
+		<!--people page-->
+		<section data-role="page" id="people" class="active">
+			<h2>People</h2>
+			<p>Add your people here and double tap to remove the person; swiping right and left to change page</p>
+			<input type="button" id="btnAddPeople" value="Add" class="btn" />
+			<ul data-role="listview1">
+				<li data-ref="1">List Item 1</li>
+				<li data-ref="2">List Item 2</li>
+				<li data-ref="3">List Item 3</li>
+				<li data-ref="4">List Item 4</li>
+				<li data-ref="5">List Item 5</li>
+				<li data-ref="6">List Item 6</li>
+			</ul>
+		</section>
+
+		<!--gift for people page-->
+		<section data-role="page" id="occasion" class="hidden">
+			<h2>Gifts for </h2>
+			<input type="button" id="btnBackPlp" value="Back" class="btn" />
+			<input type="button" id="AddGO" value="Add" class="btn" />
+		</section>
+
+		<!--occasion page-->
+		<section data-role="page" id="occasion" class="hidden">
+			<h2>Occasion</h2>
+			<p>Add your occasion here and double tap to remove the occasion; swiping right and left to change page</p>
+			<input type="button" id="btnAddOccasion" value="Add" class="btn" />
+		</section>
+
+		<!--gift for occasion page-->
+		<section data-role="page" id="occasion" class="hidden">
+			<h2>Gifts for </h2>
+			<input type="button" id="btnBackOcc" value="Back" class="btn" />
+			<input type="button" id="AddGP" value="Add" class="btn" />
+			<ul data-role="listview2">
+			</ul>
+		</section>
+
+		<!--cover and dialogue1-->
+		<div data-role="overlay">&nbsp;</div>
+
+		<div data-role="modal">
+			<p>New Gift for</p>
+
+			<form>
+
+				<div class="formBox">
+					<select name="list1" id="list1" class="lg">
+						<option value="1">First Value</option>
+						<option value="2">Second Value</option>
+						<option value="3">Third Value</option>
+						<option value="4">Fourth Value</option>
+						<option value="5">Fifth Value</option>
+						<option value="6">Sixth Value</option>
+					</select>
+				</div>
+
+				<div class="formBox">
+					<input type="text" id="txt" name="txt" class="lg" placeholder="Gift Idea" />
+				</div>
+
+				<div class="formBox">
+					<input type="button" id="btnCancel" value="Cancel" class="btn" />
+					<input type="button" id="btnSave" value="Save" class="btn" />
+				</div>
+
+			</form>
+
+		</div>
+
+
+		<!--cover and dialogue2-->
+		<div data-role="overlay">&nbsp;</div>
+
+		<div data-role="modal">
+			<p>New Gift for</p>
+
+			<form>
+
+				<div class="formBox">
+					<select name="list2" id="list2" class="lg">
+						<option value="1">First Value</option>
+						<option value="2">Second Value</option>
+						<option value="3">Third Value</option>
+						<option value="4">Fourth Value</option>
+						<option value="5">Fifth Value</option>
+						<option value="6">Sixth Value</option>
+					</select>
+				</div>
+
+				<div class="formBox">
+					<input type="text" id="txt" name="txt" class="lg" placeholder="Gift Idea" />
+				</div>
+
+				<div class="formBox">
+					<input type="button" id="btnCancel" value="Cancel" class="btn" />
+					<input type="button" id="btnSave" value="Save" class="btn" />
+				</div>
+
+			</form>
+
+		</div>
+
+		<!--wrapper-->
+	</div>
+
+
+	<script src="js/index.js"></script>
+
+
+</body>
+
+</html>

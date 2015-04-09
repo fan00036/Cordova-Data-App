@@ -1,0 +1,84 @@
+2015-04-09 11:48:02.530 HelenDataAPP[1919:500214] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/helen/Library/Developer/CoreSimulator/Devices/C614949D-C714-40B5-9B70-1E02C1C28692/data/Containers/Data/Application/26147190-66F3-449D-A568-6E06D18EAD8D/Library/Cookies/Cookies.binarycookies
+2015-04-09 11:48:02.791 HelenDataAPP[1919:500214] Apache Cordova native platform version 3.7.0 is starting.
+2015-04-09 11:48:02.792 HelenDataAPP[1919:500214] Multi-tasking -> Device: YES, App: YES
+2015-04-09 11:48:02.804 HelenDataAPP[1919:500214] Unlimited access to network resources
+2015-04-09 11:48:02.814 HelenDataAPP[1919:500214] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-09 11:48:03.845 HelenDataAPP[1919:500214] Resetting plugins due to page load.
+2015-04-09 11:48:04.472 HelenDataAPP[1919:500214] Finished load of: file:///Users/helen/Library/Developer/CoreSimulator/Devices/C614949D-C714-40B5-9B70-1E02C1C28692/data/Containers/Bundle/Application/22B9C97C-4CC9-4B98-8053-57898405C212/HelenDataAPP.app/www/index.html
+2015-04-09 11:50:44.215 HelenDataAPP[2036:502119] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/helen/Library/Developer/CoreSimulator/Devices/C614949D-C714-40B5-9B70-1E02C1C28692/data/Containers/Data/Application/001B62FD-3638-45B2-9B79-F29347D1B2BF/Library/Cookies/Cookies.binarycookies
+2015-04-09 11:50:44.281 HelenDataAPP[2036:502119] Apache Cordova native platform version 3.7.0 is starting.
+2015-04-09 11:50:44.281 HelenDataAPP[2036:502119] Multi-tasking -> Device: YES, App: YES
+2015-04-09 11:50:44.282 HelenDataAPP[2036:502119] Unlimited access to network resources
+2015-04-09 11:50:44.283 HelenDataAPP[2036:502119] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-09 11:50:44.464 HelenDataAPP[2036:502119] Resetting plugins due to page load.
+2015-04-09 11:50:44.789 HelenDataAPP[2036:502119] Finished load of: file:///Users/helen/Library/Developer/CoreSimulator/Devices/C614949D-C714-40B5-9B70-1E02C1C28692/data/Containers/Bundle/Application/52998414-BD9C-4128-8497-071C809A9410/HelenDataAPP.app/www/index.html
+2015-04-09 12:36:23.829 HelenDataAPP[2494:552803] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/helen/Library/Developer/CoreSimulator/Devices/C614949D-C714-40B5-9B70-1E02C1C28692/data/Containers/Data/Application/EE91924A-62BB-4F4B-A4F8-7A6F15BD9029/Library/Cookies/Cookies.binarycookies
+2015-04-09 12:36:23.909 HelenDataAPP[2494:552803] Apache Cordova native platform version 3.7.0 is starting.
+2015-04-09 12:36:23.909 HelenDataAPP[2494:552803] Multi-tasking -> Device: YES, App: YES
+2015-04-09 12:36:23.910 HelenDataAPP[2494:552803] Unlimited access to network resources
+2015-04-09 12:36:23.912 HelenDataAPP[2494:552803] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-09 12:36:24.106 HelenDataAPP[2494:552803] Resetting plugins due to page load.
+2015-04-09 12:36:24.448 HelenDataAPP[2494:552803] Finished load of: file:///Users/helen/Library/Developer/CoreSimulator/Devices/C614949D-C714-40B5-9B70-1E02C1C28692/data/Containers/Bundle/Application/61FB074B-358C-4922-BE11-E9E03B771A31/HelenDataAPP.app/www/index.html
+2015-04-09 14:42:59.366 HelenDataAPP[2861:717650] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/helen/Library/Developer/CoreSimulator/Devices/C614949D-C714-40B5-9B70-1E02C1C28692/data/Containers/Data/Application/8C98634A-2330-4F5E-A2AA-C6C86DB12F2E/Library/Cookies/Cookies.binarycookies
+2015-04-09 14:42:59.505 HelenDataAPP[2861:717650] Apache Cordova native platform version 3.7.0 is starting.
+2015-04-09 14:42:59.505 HelenDataAPP[2861:717650] Multi-tasking -> Device: YES, App: YES
+2015-04-09 14:42:59.506 HelenDataAPP[2861:717650] Unlimited access to network resources
+2015-04-09 14:42:59.508 HelenDataAPP[2861:717650] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-09 14:42:59.696 HelenDataAPP[2861:717650] Resetting plugins due to page load.
+2015-04-09 14:43:00.329 HelenDataAPP[2861:717650] Finished load of: file:///Users/helen/Library/Developer/CoreSimulator/Devices/C614949D-C714-40B5-9B70-1E02C1C28692/data/Containers/Bundle/Application/9293EA49-AFE8-437F-87D6-EA08C1E8FC9C/HelenDataAPP.app/www/index.html
+2015-04-09 18:58:51.928 HelenDataAPP[771:42745] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/helen/Library/Developer/CoreSimulator/Devices/C614949D-C714-40B5-9B70-1E02C1C28692/data/Containers/Data/Application/DA8B1B7B-328A-4CF5-A4C8-70A78D39D169/Library/Cookies/Cookies.binarycookies
+2015-04-09 18:58:52.165 HelenDataAPP[771:42745] Apache Cordova native platform version 3.7.0 is starting.
+2015-04-09 18:58:52.166 HelenDataAPP[771:42745] Multi-tasking -> Device: YES, App: YES
+2015-04-09 18:58:52.179 HelenDataAPP[771:42745] Unlimited access to network resources
+2015-04-09 18:58:52.189 HelenDataAPP[771:42745] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-09 18:58:52.898 HelenDataAPP[771:42745] Resetting plugins due to page load.
+2015-04-09 18:58:53.321 HelenDataAPP[771:42745] Finished load of: file:///Users/helen/Library/Developer/CoreSimulator/Devices/C614949D-C714-40B5-9B70-1E02C1C28692/data/Containers/Bundle/Application/68841A7C-18BC-455F-BFBD-9A02E39F6197/HelenDataAPP.app/www/index.html
+2015-04-09 19:06:17.091 HelenDataAPP[877:51908] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/helen/Library/Developer/CoreSimulator/Devices/C614949D-C714-40B5-9B70-1E02C1C28692/data/Containers/Data/Application/941A6BC7-9C6F-4237-BA69-F9AA087A4C0E/Library/Cookies/Cookies.binarycookies
+2015-04-09 19:06:17.163 HelenDataAPP[877:51908] Apache Cordova native platform version 3.7.0 is starting.
+2015-04-09 19:06:17.164 HelenDataAPP[877:51908] Multi-tasking -> Device: YES, App: YES
+2015-04-09 19:06:17.164 HelenDataAPP[877:51908] Unlimited access to network resources
+2015-04-09 19:06:17.166 HelenDataAPP[877:51908] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-09 19:06:17.351 HelenDataAPP[877:51908] Resetting plugins due to page load.
+2015-04-09 19:06:17.742 HelenDataAPP[877:51908] Finished load of: file:///Users/helen/Library/Developer/CoreSimulator/Devices/C614949D-C714-40B5-9B70-1E02C1C28692/data/Containers/Bundle/Application/555873EA-06E6-46B6-97A4-9B63E379BA2E/HelenDataAPP.app/www/index.html
