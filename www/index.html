@@ -7,14 +7,17 @@
 <head>
 
 
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
 	<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
 
-	<script src="cordova.js"></script>
+<script src="js/index.js"></script>
+<script src="cordova.js"></script>
+<script src="https://hammerjs.github.io/dist/hammer.js"></script>
 
-	<script src="https://hammerjs.github.io/dist/hammer.js"></script>
 
-	</script>
+
+
 
 
 
@@ -22,122 +25,120 @@
 
 <body>
 
+    
+    <div class="wrapper">
+        <!-- container for all pages -->
+        
+        <section data-role="page" id="people-list" class="active">
+            <h2>People </h2>
+            <button class="btn" id="btnAddPeople">Add</button>
+            <p>
+                Add your people here and double tap to remove the person; swiping right and left to change page
+            </p>
+            <ul data-role="listview">
+                <li data-ref="1">People Item 1</li>
+                <li data-ref="2">People Item 2</li>
+                <li data-ref="3">People Item 3</li>
+                <li data-ref="4">People Item 4</li>
+                <li data-ref="5">People Item 5</li>
+                <li data-ref="6">People Item 6</li>
+            </ul>
+        </section>
+        
+        <section data-role="page" id="occasion-list">
+            <h2>Occasions </h2>
+            <button class="btn" id="btnAddOccasion">Add</button>
+            <p>
+                Add your occasion here and double tap to remove the occasion; swiping right and left to change page
+            </p>
+            <ul data-role="listview">
+                <li data-ref="1">occasion Item 1</li>
+                <li data-ref="2">occasion Item 2</li>
+                <li data-ref="3">occasion Item 3</li>
+                <li data-ref="4">occasion Item 4</li>
+                <li data-ref="5">occasion Item 5</li>
+                <li data-ref="6">occasion Item 6</li>
+            </ul>
+        </section>
+        
+        <section data-role="page" id="gifts-for-person">
+            <h2 data-role="page-title" id="title-gift-for-person">Gift Ideas </h2>
+            <button class="btn" id="btnBackToPerson">Back</button>
+            <button class="btn" id="btnAddGiftForPerson">Add</button>
+            <p data-role="page-instruction">
+            Add your gift here to people and double tap to remove the occasion;
+            </p>
+            <ul data-role="listview">
+                <li data-ref="1">People-gift Item 1</li>
+                <li data-ref="2">People-gift Item 2</li>
+                <li data-ref="3">People-gift Item 3</li>
+                <li data-ref="4">People-gift Item 4</li>
+                <li data-ref="5">People-gift Item 5</li>
+                <li data-ref="6">People-gift Item 6</li>
+            </ul>
+        </section>
+        
+        <section data-role="page" id="gifts-for-occasion">
+            <h2 data-role="page-title"id="title-gift-for-occasion">Gift Ideas </h2>
+            <button class="btn" id="btnBackToOccasion">Back</button>
+            <button class="btn" id="btnAddGiftForOccasion">Add</button>
+            <p data-role="page-instruction">
+            Add your gift here to occasion and double tap to remove the occasion;
+            </p>
+            <ul data-role="listview">
+                <li data-ref="1">occasion-gift Item 1</li>
+                <li data-ref="2">occasion-gift Item 2</li>
+                <li data-ref="3">occasion-gift Item 3</li>
+                <li data-ref="4">occasion-gift Item 4</li>
+                <li data-ref="5">occasion-gift Item 5</li>
+                <li data-ref="6">occasion-gift Item 6</li>
+            </ul>
+        </section>
+    </div>
+    
+    <!-- always display the overlay between a page and modal -->
+    <div data-role="overlay">&nbsp;</div>
+    
+    <!-- modal for adding an entry to person or occasion table -->
+    <div data-role="modal" id="add-person-occasion">
+        <h3 id="modalTitle">Title (new person | occasion)</h3>
+        <form>
+            <div class="formBox">
+                <input type="text" id="new-per-occ" value="" placeholder="new name" class=""/>
+            </div>
+            <div class="formBox">
+                <input type="button" class="btn btnCancel" value="CANCEL" />
+                <input type="button" class="btn" id="btnSavePersonOccasion" value="SAVE" />
+            </div>
+        </form>
+    </div>
+    
+    <!-- modal for adding an entry to gift idea table. Requires a person or occasion plus the idea -->
+    <div data-role="modal" id="add-gift">
+        <h3>Title (new gift for person | occasion)</h3>
+        <form>
+            <div class="formBox">
+                <select id="list-per-occ">
+                    <option value="0">Choose one</option>
+                    <option value="1">First Value</option>
+                    <option value="2">Second Value</option>
+                    <option value="3">Third Value</option>
+                    <option value="4">Fourth Value</option>
+                    <option value="5">Fifth Value</option>
+                    <option value="6">Sixth Value</option>
+                </select>
+            </div>
+            <div class="formBox">
+                <input type="text" id="new-idea" value="" placeholder="Gift Idea" class=""/>
+            </div>
+            <div class="formBox">
+                <input type="button" class="btn btnCancel" class="btn" value="CANCEL" />
+                <input type="button" id="btnSaveGift"  class="btn" value="SAVE" />
+            </div>
+        </form>	
+    </div>
 
-	<div class="wrapper">
 
-
-		<header class="apptitle">
-			<h1>Giftr</h1>
-		</header>
-
-		<!--people page-->
-		<section data-role="page" id="people" class="active">
-			<h2>People</h2>
-			<p>Add your people here and double tap to remove the person; swiping right and left to change page</p>
-			<input type="button" id="btnAddPeople" value="Add" class="btn" />
-			<ul data-role="listview1">
-				<li data-ref="1">List Item 1</li>
-				<li data-ref="2">List Item 2</li>
-				<li data-ref="3">List Item 3</li>
-				<li data-ref="4">List Item 4</li>
-				<li data-ref="5">List Item 5</li>
-				<li data-ref="6">List Item 6</li>
-			</ul>
-		</section>
-
-		<!--gift for people page-->
-		<section data-role="page" id="occasion" class="hidden">
-			<h2>Gifts for </h2>
-			<input type="button" id="btnBackPlp" value="Back" class="btn" />
-			<input type="button" id="AddGO" value="Add" class="btn" />
-		</section>
-
-		<!--occasion page-->
-		<section data-role="page" id="occasion" class="hidden">
-			<h2>Occasion</h2>
-			<p>Add your occasion here and double tap to remove the occasion; swiping right and left to change page</p>
-			<input type="button" id="btnAddOccasion" value="Add" class="btn" />
-		</section>
-
-		<!--gift for occasion page-->
-		<section data-role="page" id="occasion" class="hidden">
-			<h2>Gifts for </h2>
-			<input type="button" id="btnBackOcc" value="Back" class="btn" />
-			<input type="button" id="AddGP" value="Add" class="btn" />
-			<ul data-role="listview2">
-			</ul>
-		</section>
-
-		<!--cover and dialogue1-->
-		<div data-role="overlay">&nbsp;</div>
-
-		<div data-role="modal">
-			<p>New Gift for</p>
-
-			<form>
-
-				<div class="formBox">
-					<select name="list1" id="list1" class="lg">
-						<option value="1">First Value</option>
-						<option value="2">Second Value</option>
-						<option value="3">Third Value</option>
-						<option value="4">Fourth Value</option>
-						<option value="5">Fifth Value</option>
-						<option value="6">Sixth Value</option>
-					</select>
-				</div>
-
-				<div class="formBox">
-					<input type="text" id="txt" name="txt" class="lg" placeholder="Gift Idea" />
-				</div>
-
-				<div class="formBox">
-					<input type="button" id="btnCancel" value="Cancel" class="btn" />
-					<input type="button" id="btnSave" value="Save" class="btn" />
-				</div>
-
-			</form>
-
-		</div>
-
-
-		<!--cover and dialogue2-->
-		<div data-role="overlay">&nbsp;</div>
-
-		<div data-role="modal">
-			<p>New Gift for</p>
-
-			<form>
-
-				<div class="formBox">
-					<select name="list2" id="list2" class="lg">
-						<option value="1">First Value</option>
-						<option value="2">Second Value</option>
-						<option value="3">Third Value</option>
-						<option value="4">Fourth Value</option>
-						<option value="5">Fifth Value</option>
-						<option value="6">Sixth Value</option>
-					</select>
-				</div>
-
-				<div class="formBox">
-					<input type="text" id="txt" name="txt" class="lg" placeholder="Gift Idea" />
-				</div>
-
-				<div class="formBox">
-					<input type="button" id="btnCancel" value="Cancel" class="btn" />
-					<input type="button" id="btnSave" value="Save" class="btn" />
-				</div>
-
-			</form>
-
-		</div>
-
-		<!--wrapper-->
-	</div>
-
-
-	<script src="js/index.js"></script>
 
 
 </body>

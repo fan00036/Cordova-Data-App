@@ -7,7 +7,13 @@
     margin:0;
     box-sizing:border-box;
     font-family:'Open Sans', sans-serif;
+    
    
+}
+
+html,body{
+    min-height:100%;
+    height:100%;
 }
 body{
      background-color: #333;
@@ -28,7 +34,8 @@ p{
 }
 .wrapper{
     width:100%;
-    height:100%;
+    min-height:100%;
+    position:relative;
     background-color: #666;
 }
 /*************************************
@@ -86,19 +93,14 @@ input, select{
 .xlg{
     width:40rem;
 }
-#occasion{
-    min-height:100%;
-}
-#people{
-    min-height:100%;
-}
+
 /*************************************
  Pages
  *************************************/
-[data-role=listview1]{
+[data-role=listview]{
     list-style:none;
 }
-[data-role=listview1] li{
+[data-role=listview] li{
     font-size:1.2rem;
     line-height:3rem;
     height:3rem;
@@ -110,20 +112,6 @@ input, select{
     cursor:pointer;
 }
 
-[data-role=listview2]{
-    list-style:none;
-}
-[data-role=listview2] li{
-    font-size:1.2rem;
-    line-height:3rem;
-    height:3rem;
-    border:1px solid #000;
-    background-color:#ccc;
-    color:#333;
-    font-weight:300;
-    padding:0 1rem;
-    cursor:pointer;
-}
 
 
 /**************************************
@@ -132,13 +120,11 @@ input, select{
 
 [data-role="page"] {
     padding: 5%;
-    left: 100%;
-    right: -10px;
-    transition: left 0.2s linear, right 0.2s linear;
     z-index: 5;
     top:0;
-    width:100%;
-    height:100%;
+    min-width:100%;
+    min-height: 100%;
+    position: absolute;
     color:#eee;
     background-color:#333;
     /*** Items to trigger hardware acceleration ***/
@@ -191,4 +177,11 @@ input, select{
     margin: 0 auto;
     margin-top: 10px;  
 }
+}
+
+#myElement {
+    background: silver;
+    height: 300px;
+    text-align: center;
+    font: 30px/300px Helvetica, Arial, sans-serif;
 }
